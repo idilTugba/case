@@ -1,0 +1,12 @@
+{
+  "name": "case1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build":  "npx tailwindcss -i tailwind.css -o ./dist/tailwind.css --minify",
+    "watch": "npx tailwindcss -i tailwind.css -o ./dist/tailwind.css -w --minify"
+  },
+  "author": "",
+  "license": "ISC"
+}

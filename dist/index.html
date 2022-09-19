@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tailwind.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <h1 class="text-3xl font-bold underline pl-5 mt-5">
+                Batman Games 
+            </h1>
+            <div id="gameContainer" class="game-container m-4 are-images-unloaded grid md:grid-cols-3 gap-12 md:gap-4">
+                <article class="game-item w-100 bg-emerald-100 border-black box-border relative overflow-hidden">
+                    <div class="img-content h-40 p-8 border-2 border-black bg-white">
+                        <div class="img-item h-full">
+                            
+                        </div>
+                    </div>
+                    <div class="detail-content p-5 h-40">
+                        <div class="add-fav absolute top-2.5 right-2.5">
+                            <i class="icon icon-heart" onclick="app.actions.addFav(this.id, this.title);" >
+                                <img class="pointer-events-auto" src="https://www.svgrepo.com/show/13666/heart.svg" width="24px" height="24px" alt="">
+                            </i>
+                        </div> 
+                        <div class="name mb-2"></div>
+                        <div class="price-contant">
+                            <div class="sale-price text-3xl font-bold"></div>
+                            <div class="retail-price absolute top-1 left-2 text-red-600 font-bold text-base"></div>
+                        </div>
+                        <div class="add-basket-item text-right absolute right-5 bottom-5">
+                            <button type="button" onclick="app.actions.addBasket(this.id, this.title, this.price);" class="add-basket bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 bg-red-300 hover:bg-red-500 click:bg-red-400">Sepete Ekle</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
